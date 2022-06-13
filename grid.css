@@ -1,0 +1,103 @@
+@import url('https://fonts.google.com/specimen/Legend+Deca:wght@400&display=swap');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange:hsl(31,77%,52%);
+    --dark-cyan:hsl(184,100%,22%);
+    --very-dark-cyan:hsl(179,100%,13%);
+
+    --transparent-white:hsla(0,0%,100%,.75);
+    --very-light-gray:hsl(0,0%,95%);
+}
+
+p{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: minmax(250px,auto);
+    grid-auto-columns: minmax(250px,auto);
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+.grid-item1{
+    background-color: var(--bright-orange);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.grid-item2{
+    background-color: var(--dark-cyan);
+}
+.grid-item3{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.grid-item{
+    display: grid;
+    padding: 45px;
+}
+
+body{
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+    font-family: 'Legend Deca';
+}
+h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.5em;
+}
+h1,h2,h3,h4,h5,h6,button,p{
+    color: var(--transparent-white);
+}
+button{
+    border-radius: 25px;
+    padding: 10px;
+    width: 140px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.btn-1{
+   color: var(--bright-orange); 
+}
+.btn-2{
+color: var(--dark-cyan);
+}
+.btn-3{
+color: var(--very-dark-cyan);
+}
+
+@media (max-width:375px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 320px;
+        background-color: blue;
+    }
+    .grid-item{
+        height: 400px;
+    }
+}
+
+.btn-1:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--bright-orange);
+}
+.btn-2:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--dark-cyan);
+}
+.btn-3:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--very-dark-cyan);
+}

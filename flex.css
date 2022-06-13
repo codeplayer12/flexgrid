@@ -1,0 +1,90 @@
+@import url('https://fonts.google.com/specimen/Legend+Deca:wght@400&display=swap');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange:hsl(31,77%,52%);
+    --dark-cyan:hsl(184,100%,22%);
+    --very-dark-cyan:hsl(179,100%,13%);
+
+    --transparent-white:hsla(0,0%,100%,.75);
+    --very-light-gray:hsl(0,0%,95%);
+}
+
+p{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--transparent-white);
+}
+h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.5em;
+    color: var(--transparent-white);
+}
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+}
+.flex-item{
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+img{
+    width: 100px;
+}
+.flex-item1{
+    background: var(--bright-orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.flex-item2{
+    background: var(--dark-cyan);
+}
+.flex-item3{
+    background: var(--very-dark-cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+button{
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    width: 124px;
+}
+.btn-1{
+    color: var(--bright-orange);
+}
+.btn-2{
+    color: var(--dark-cyan);
+}
+.btn-3{
+    color: var(--very-dark-cyan);
+}
+.btn-1:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--bright-orange);
+}
+.btn-2:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--dark-cyan);
+}
+.btn-3:hover{
+    border: 2px solid var(--transparent-white);
+    cursor: pointer;
+    color: var(--transparent-white);
+    background-color: var(--very-dark-cyan);
+}
+
+
+body{
+    background-color: var(--transparent-white);
+}
